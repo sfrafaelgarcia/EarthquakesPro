@@ -15,10 +15,10 @@ struct QuakeRow: View {
             QuakeMagnitude(quake: quake)
             VStack(alignment: .leading) {
                 Text(quake.place)
-                    .font(.caption)
+                    .font(.headline)
                 Text(quake.time.formatted(.relative(presentation: .named)))
                     .foregroundStyle(.secondary)
-                    .font(.caption)
+                    .font(.subheadline)
             }
         }
         .padding(.vertical, 8)

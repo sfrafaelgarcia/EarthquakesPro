@@ -11,9 +11,9 @@ struct QuakeMagnitude: View {
     var quake: Quake
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 6)
+        RoundedRectangle(cornerRadius: 4)
             .fill(Color.black)
-            .frame(width: 60, height: 40)
+            .frame(width: 50, height: 50)
             .overlay(
                 Text("\(quake.magnitude.formatted(.number.precision(.fractionLength(1))))")
                     .font(.headline)
