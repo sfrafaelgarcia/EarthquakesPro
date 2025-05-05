@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SectionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Hello, World!")
+                .font(.headline)
+                .fontWeight(.bold)
+            Image(systemName: "star.fill")
+                .foregroundStyle(.red)
+        }
     }
 }
 
