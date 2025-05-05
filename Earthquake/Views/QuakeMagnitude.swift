@@ -18,7 +18,6 @@ struct QuakeMagnitude: View {
                 Text("\(quake.magnitude.formatted(.number.precision(.fractionLength(1))))")
                     .font(.headline)
                     .fontWeight(.bold)
-                    .foregroundColor(.white)
                     .foregroundStyle(quake.color)
             )
     }
