@@ -46,7 +46,7 @@ struct Quakes: View {
             .listStyle(.inset)
             .navigationTitle("Earthquakes")
             .refreshable {
-                await fetchQuakes()
+                try? await quakesProvider.fetchQuakes()
             }
         }
     }
